@@ -21,7 +21,7 @@ main.js
 ``` js
 import VueAppleLogin from 'vue-apple-login';
 
-Vue.use(VueAppleSignin, {
+Vue.use(VueAppleLogin, {
   clientId: 'com.example.signin',
   scope: 'name email',
   redirectURI: 'https://example.com',
