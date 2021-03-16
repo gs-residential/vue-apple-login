@@ -62,7 +62,7 @@ validation check with the server.
 `:onFailure` will be called when authentication failed.
 **Make sure `usePopup` is set to `true` for callback to work.**
 
-On a succesfull login you we get the following data
+On a succesfull login you will get the following data
 ```json
 {
   "authorization": {
