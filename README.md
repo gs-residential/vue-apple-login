@@ -21,13 +21,17 @@ main.js
 ``` js
 import VueAppleLogin from 'vue-apple-login';
 
-Vue.use(VueAppleLogin, {
+const createdApp = createApp(App);
+
+createdApp.use(VueAppleLogin, {
   clientId: 'com.example.signin',
   scope: 'name email',
   redirectURI: 'https://example.com',
   state: time.toString(),
   usePopup: true,
 });
+
+createdApp.mount('#app');
 ```
 Now you have a `vue-apple-login` global component, ready for use.
 
@@ -97,7 +101,7 @@ AppleLogin.vue
         :onSuccess="onSuccess"
         :onFailure="onFailure"
     ></vue-apple-login>
-    <button v-if="signedIn v-on:click="onSuccessLogout()" class="login-button">
+    <button v-if="signedIn" v-on:click="onSuccessLogout()" class="login-button">
       Sign out with Apple
     </button>
   </div>

@@ -1,6 +1,6 @@
 {
   "name": "vue-apple-login",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A vue plugin to include a Apple sign-in button into your web app with popup and callbacks.",
   "main": "dist/vue-apple-signin.min.js",
   "author": {
@@ -23,12 +23,15 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/eslint index.js && terser index.js -o ./dist/vue-apple-signin.min.js",
+    "build": "terser index.js -o ./dist/vue-apple-signin.min.js",
     "lint": "./node_modules/.bin/eslint index.js"
+  },
+  "dependencies": {
+    "vue": "3^.0.0"
   },
   "devDependencies": {
     "@vue/eslint-config-airbnb": "^4.0.0",
-    "eslint": "^5.16.0",
+    "eslint": "^8.31.0",
     "eslint-plugin-vue": "^5.0.0",
     "terser": "^4.0.0",
     "lodash": ">=4.17.13"
