@@ -1,3 +1,5 @@
+import { h } from 'vue'
+
 /* eslint-disable no-console */
 function err (msg) {
   if (typeof console !== 'undefined') {
@@ -166,23 +168,21 @@ export default {
           return JSON.parse(jsonPayload);
         },
       },
-      render (createElement) {
-        return createElement(
+      render () {
+        return h(
             'div', {
-              attrs: {
-                id: 'appleid-signin',
-                'data-mode': this.mode,
-                'data-type': this.type,
-                'data-color': this.color,
-                'data-border': this.dataBorder,
-                'data-radius': this.radius,
-                'data-width': this.width,
-                'data-height': this.height,
-                'data-logo-size': this.logoSize,
-                'data-logo-position': this.logoPosition,
-                'data-label-position': this.labelPosition,
-                'class': this.className
-              }
+              id: 'appleid-signin',
+              'data-mode': this.mode,
+              'data-type': this.type,
+              'data-color': this.color,
+              'data-border': this.dataBorder,
+              'data-radius': this.radius,
+              'data-width': this.width,
+              'data-height': this.height,
+              'data-logo-size': this.logoSize,
+              'data-logo-position': this.logoPosition,
+              'data-label-position': this.labelPosition,
+              'class': this.className
             },
         )
       }
