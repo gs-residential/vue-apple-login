@@ -6,8 +6,13 @@
 ![normal apple button white](images/apple-id-white.png)
 
 ## Install
+For Vue.js 3:
 ```
-npm install vue-apple-login
+npm install vue-apple-login@2.x
+```
+For Vue.js 2:
+```
+npm install vue-apple-login@1.x
 ```
 
 ## Usage
@@ -97,7 +102,7 @@ AppleLogin.vue
         :onSuccess="onSuccess"
         :onFailure="onFailure"
     ></vue-apple-login>
-    <button v-if="signedIn v-on:click="onSuccessLogout()" class="login-button">
+    <button v-if="signedIn" v-on:click="onSuccessLogout()" class="login-button">
       Sign out with Apple
     </button>
   </div>
