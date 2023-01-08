@@ -6,8 +6,13 @@
 ![normal apple button white](images/apple-id-white.png)
 
 ## Install
+For Vue.js 3:
 ```
-npm install vue-apple-login
+npm install vue-apple-login@2.x
+```
+For Vue.js 2:
+```
+npm install vue-apple-login@1.x
 ```
 
 ## Usage
